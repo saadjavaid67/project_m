@@ -19,6 +19,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -77,19 +80,15 @@
             </div>
         </nav> --}}
         <div id="wrapper" class="active">
-            <div id="sidebar-wrapper">
-                <ul id="sidebar_menu"  class="sidebar-nav">
+            <div id="sidebar-wrapper" class="">
+                <ul id="sidebar_menu" class="sidebar-nav">
                     <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon"
                                 class="glyphicon glyphicon-align-justify"></span></a></li>
                 </ul>
                 <ul class="sidebar-nav" id="sidebar">
-                    <li><a>Cadastro<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                    <ul class="sidebar-nav" id="sidebar">
-                        <li><a>link1<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                        <li><a>link2<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                    </ul>
-                    <li><a>Consulta<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                    <li><a>Relatorio<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    <li><a><i class="fas fa-user"></i> Cadastro</a></li>
+                    <li><a><i class="fas fa-user"></i> Consulta</a></li>
+                    <li><a><i class="fas fa-user"></i> Relatorio</a></li>
                 </ul>
             </div>
         </div>
