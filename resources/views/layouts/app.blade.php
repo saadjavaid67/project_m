@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +20,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -73,11 +75,43 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
+        </nav> --}}
+        <div id="wrapper" class="active">
+            <div id="sidebar-wrapper">
+                <ul id="sidebar_menu"  class="sidebar-nav">
+                    <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon"
+                                class="glyphicon glyphicon-align-justify"></span></a></li>
+                </ul>
+                <ul class="sidebar-nav" id="sidebar">
+                    <li><a>Cadastro<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    <ul class="sidebar-nav" id="sidebar">
+                        <li><a>link1<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                        <li><a>link2<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    </ul>
+                    <li><a>Consulta<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    <li><a>Relatorio<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                </ul>
+            </div>
+        </div>
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu-toggle").click(function(e) {
+                $("#wrapper").toggleClass("active");
+            });
+            $('#wrapper').on('mouseenter', function() {
+                $("#wrapper").addClass("active");
+            })
+            $('#wrapper').on('mouseleave', function() {
+                $("#wrapper").removeClass("active");
+            })
+        })
+    </script>
 </body>
+
 </html>
