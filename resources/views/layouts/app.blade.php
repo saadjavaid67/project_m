@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+
 </head>
 
 <body>
@@ -79,48 +81,15 @@
                 </div>
             </div>
         </nav> --}}
-        <div id="wrapper" class="active">
-            <div id="sidebar-wrapper" class="pt-3">
-                <ul id="sidebar_menu" class="sidebar-nav border-bottom">
-                    <li>
-                        <a>
-                            <div>
-                                <img class="logo" src="{{ asset('assets/logo/logo.png') }}" alt="logo">
-                                <span>{{ config('app.name', 'Laravel') }}</span>
-                            </div>
-                            <img src="{{ asset('assets/navbar-toggler.png') }}" id="menu-toggle" alt="">
-                        </a>
-
-                    </li>
-                </ul>
-                <ul class="sidebar-nav border-bottom py-3" id="sidebar">
-                    <li><a><i class="fas fa-border-all"></i><span>Home</span></a></li>
-                    <li><a><i class="fas fa-message"></i><span>Contacts</span></a></li>
-                    <li><a><i class="fas fa-user-group"></i><span>Members</span></a></li>
-                    <li><a><i class="fas fa-list-check"></i><span>Tasks</span></a></li>
-                    <li><a><i class="fas fa-gear"></i><span>Settings</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <main class="py-4">
+        @include('layouts.inc.sidebar')
+        <main class="py-4" id="main-container">
             @yield('content')
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $("#menu-toggle").click(function(e) {
-                $("#wrapper").toggleClass("active");
-            });
-            $('#wrapper').on('mouseenter', function() {
-                $("#wrapper").addClass("active");
-            })
-            $('#wrapper').on('mouseleave', function() {
-                $("#wrapper").removeClass("active");
-            })
-        })
-    </script>
+        <script src="{{ asset('js/sidebar.js') }}"></script>
+
 </body>
 
 </html>
