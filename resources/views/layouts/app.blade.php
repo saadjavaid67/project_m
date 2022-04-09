@@ -30,7 +30,7 @@
     <div id="app">
         @include('layouts.inc.sidebar')
         <main class="py-4" id="main-container">
-            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}

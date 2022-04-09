@@ -5,7 +5,7 @@
     </style>
 @endpush
 @section('content')
-<div class="container mt-2">
+<div class="container mtlg">
     <div class="row text-center border-bottom">
         <h2>{{ __('New Request') }}</h2>
     </div>
@@ -48,11 +48,11 @@
         <div class="row mt-3">
             <div class="col"><span class="input-title">Item No.</span><input type="text"
                     class="input-group"></div>
-            <div class="col-md-1"><span class="input-title">Unit</span><input type="text"
+            <div class="col-lg-1"><span class="input-title">Unit</span><input type="text"
                     class="input-group"></div>
-            <div class="col-md-1"><span class="input-title">Quantity</span><input type="text"
+            <div class="col-lg-1"><span class="input-title">Quantity</span><input type="text"
                     class="input-group"></div>
-            <div class="col-md-1">
+            <div class="col-lg-1">
                 <a href="#" style="color: #4A3AFF">+Add Item</a>
             </div>
         </div>
@@ -64,12 +64,12 @@
             </div>
             <div class="col">
                 <div class="row justify-content-end text-light">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <button class="btn btn-danger">
                             Cancel
                         </button>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <button class="btn btn-primary">
                             Confirm
                         </button>
