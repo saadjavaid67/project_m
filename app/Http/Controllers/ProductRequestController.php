@@ -18,6 +18,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     * Show supplier quotation page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function supplier_quotation_show()
+    {
+        return view('product.request.supplier_quotation');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
