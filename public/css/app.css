@@ -12245,15 +12245,6 @@ fieldset:disabled .btn {
 }
 
 
-.rectangle {
-    /* position: absolute; */
-    width: 30rem;
-    /* height: 100px; */
-    background: #414141;
-    box-shadow: 0px 1.87552px 1.87552px rgba(77, 77, 77, 0.67);
-    border-radius: 20px;
-}
-
 .form-group input:focus,
 .form-group select:focus {
     border: 1px solid #EFF0F6;
@@ -12379,15 +12370,26 @@ fieldset:disabled .btn {
 .rectangle 
 {
   /* position: absolute; */
-width: 30rem;
+/* width: 30rem; */
 /* height: 100px; */
-background: #414141;
-box-shadow: 0px 1.87552px 1.87552px rgba(77, 77, 77, 0.67);
-border-radius: 20px;
+/* background: #414141; */
+/* box-shadow: 0px 1.87552px 1.87552px rgba(77, 77, 77, 0.67); */
+/* border-radius: 20px; */
+background: linear-gradient(230.04deg, #5B5B5B 2.11%, #232323 102.63%) ;
+border-radius: 12px;
+
 }
 .parts
 {
-  background-color: black;
+  background-color: #F5F5F7;
   border-radius: 14px;
-  box-sizing: border-box;
+  box-sizing: border-box;  
+}
+.same button
+{
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #fff;
+  color: gray;
+  font-family: var(--bs-body-font-family);
 }
