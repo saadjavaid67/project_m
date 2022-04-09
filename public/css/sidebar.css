@@ -1,4 +1,4 @@
-sidebar-container {
+#sidebar-container {
     /* padding-left: 70px; */
     transition: all .4s ease 0s;
     height: 100%;
@@ -7,6 +7,7 @@ sidebar-container {
 #sidebar-wrapper {
     /* margin-left: -150px; */
     /* left: -30px; */
+    padding: 20px 0;
     border-right: 1px solid #DBDBDB;
     overflow: hidden;
     width: 70px;
@@ -26,7 +27,7 @@ sidebar-container {
     padding: 0;
 }
 
-sidebar-container.active #sidebar-wrapper {
+#sidebar-container.active #sidebar-wrapper {
     width: 250px;
 }
 

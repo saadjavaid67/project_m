@@ -1,5 +1,5 @@
 <div id="sidebar-container">
-    <div id="sidebar-wrapper" class="pt-3">
+    <div id="sidebar-wrapper">
         <ul id="sidebar-menu" class="sidebar-nav border-bottom">
             <li>
                 <a>
