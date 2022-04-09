@@ -5,7 +5,7 @@
     </style>
 @endpush
 @section('content')
-<div class="container mt-5">
+<div class="container mt-2">
     <div class="row text-center border-bottom">
         <h2>{{ __('New Request') }}</h2>
     </div>
