@@ -127,7 +127,7 @@
                                 <div class="position-absolute top-0 end-0 " style="">
                                     <p class="p-1"
                                         style="color: #D58D49; background-color: #dfa8749c; border-radius:5px; font-family: 'Inter';
-                                                                                                                                                                        font-weight: 500; font-size: 12px;">
+                                                                                                                                                                            font-weight: 500; font-size: 12px;">
                                         Urgent
                                     </p>
                                 </div>
@@ -159,13 +159,13 @@
                                     <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
                                     <h4
                                         style="font-family: 'Inter';font-style: normal;font-weight: 500;
-                                                                                                                                                        font-size: 16px;">
+                                                                                                                                                            font-size: 16px;">
                                         Invoice</h4>
                                 </div>
                                 <div class="position-absolute top-0 end-0 " style="">
                                     <p class="p-1"
                                         style="color: #D58D49; background-color: #dfa8749c; border-radius:5px; font-family: 'Inter';
-                                                                                                                                            font-style: normal; font-weight: 500; font-size: 12px;">
+                                                                                                                                                font-style: normal; font-weight: 500; font-size: 12px;">
                                         Low
                                     </p>
                                 </div>
@@ -180,13 +180,13 @@
                                     Vechile Name</p>
                                 <p
                                     style="font-family: 'Inter';
-                                                                                                        font-style: normal;font-weight: 400;font-size: 12px;">
+                                                                                                            font-style: normal;font-weight: 400;font-size: 12px;">
                                     Type
                                 </p>
                             </div>
                             <p
                                 style="font-family: 'Inter';
-                                                                                                        font-style: normal;font-weight: 400;font-size: 12px;">
+                                                                                                            font-style: normal;font-weight: 400;font-size: 12px;">
                                 Model
                             </p>
                             <div class="d-flex">
