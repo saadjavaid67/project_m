@@ -32,9 +32,9 @@
         <main class="py-4" id="main-container">
             <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
-                    </a>
+                    </a> --}}
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -72,7 +72,7 @@
 
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
+                                                             document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
 
