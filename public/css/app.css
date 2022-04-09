@@ -11332,9 +11332,6 @@ textarea.form-control-lg {
     width: 250px;
 }
 
-#page-content-wrapper {
-  width: 100%;
-}
 
 #sidebar_menu li a, .sidebar-nav li a {
     display: block;
@@ -11362,6 +11359,11 @@ textarea.form-control-lg {
   padding: 0 15px;
 }
 
+#sidebar_menu li  {
+  line-height: unset;
+}
+
+.sidebar-nav li .logo ,
 .sidebar-nav li a i {
     margin-right: 20px;
     font-size: 20px;
@@ -11370,6 +11372,11 @@ textarea.form-control-lg {
   display: block;
   text-decoration: none;
   border-radius: 20px;
+  position: relative;
+}
+.sidebar-nav li a span {
+  position: absolute;
+  left: 50px;
 }
 
 .sidebar-nav li a:hover {
