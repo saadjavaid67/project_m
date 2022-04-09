@@ -28,6 +28,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     * Show prepare quotation page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function prepare_quotation_show()
+    {
+        return view('product.request.prepare_quotation');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
