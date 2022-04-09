@@ -88,7 +88,7 @@
                                 <img class="logo" src="{{ asset('assets/logo/logo.png') }}" alt="logo">
                                 <span>{{ config('app.name', 'Laravel') }}</span>
                             </div>
-                            <img src="{{ asset('assets/navbar-toggler.png') }}" alt="">
+                            <img src="{{ asset('assets/navbar-toggler.png') }}" id="menu-toggle" alt="">
                         </a>
 
                     </li>
