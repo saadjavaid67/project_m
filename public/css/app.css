@@ -12415,7 +12415,7 @@ input {
 /* background: #414141; */
 /* box-shadow: 0px 1.87552px 1.87552px rgba(77, 77, 77, 0.67); */
 /* border-radius: 20px; */
-background: linear-gradient(230.04deg, #5B5B5B 2.11%, #232323 102.63%) ;
+background-image: url(../assets/images/Rectangle\ 6.png);
 border-radius: 12px;
 
 }
@@ -12424,6 +12424,7 @@ border-radius: 12px;
   background-color: #F5F5F7;
   border-radius: 14px;
   box-sizing: border-box;  
+  font-family: Poppins;
 }
 .same button
 {
