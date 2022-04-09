@@ -104,97 +104,103 @@
 
     <div class="container">
         <div class="row mt-4" style="">
-            <div class="col-4 p-4" style="background-color: #F5F5F5; border-radius: 10px">
-                <div class="d-flex position-relative">
-                    <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
-                        <h5>To Do <span class="badge"
-                                style="border-radius: 50%; background-color:#625f6db2;">4</span>
-                        </h5>
+            <div class="col-4">
+                <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
+                    <div class="d-flex position-relative">
+                        <div class="d-flex align-items-baseline">
+                            <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
+                            <h5>To Do <span class="badge"
+                                    style="border-radius: 50%; background-color:#625f6db2;">4</span>
+                            </h5>
+                        </div>
+                        <div class="">
+                            <i class="fa fa-plus fs-4 p-1 position-absolute top-0 end-0"
+                                style="border-radius:7px; color: black; color:#5030E5; background-color: #5130e596"></i>
+                        </div>
                     </div>
-                    <div class="">
-                        <i class="fa fa-plus fs-4 p-1 position-absolute top-0 end-0"
-                            style="border-radius:7px; color: black; color:#5030E5; background-color: #5130e596"></i>
+                    <hr class="fw-bold" style="border: 2px solid #5030E5">
+
+                    <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
+                        <div>
+                            <div class="d-flex position-relative">
+                                <div class="d-flex align-items-baseline">
+                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
+                                    <h4>Quotation</h4>
+                                </div>
+                                <div class="position-absolute top-0 end-0 " style="">
+                                    <p class="p-1"
+                                        style="color: #D58D49; background-color: #dfa8749c; border-radius:5px">Urgent</p>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold">Request No.2345</h4>
+
+                            <div class="d-flex">
+                                <p class="me-5">Vechile Name</p>
+                                <p>Vechile Type</p>
+                            </div>
+                            <p>Model</p>
+                            <div class="d-flex">
+                                <p class="me-5">PO Number</p>
+                                <p class="ms-2">Invoice Number</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
+                        <div>
+                            <div class="d-flex position-relative">
+                                <div class="d-flex align-items-baseline">
+                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
+                                    <h4>Invoice</h4>
+                                </div>
+                                <div class="position-absolute top-0 end-0 " style="">
+                                    <p class="p-1"
+                                        style="color: #D58D49; background-color: #dfa8749c; border-radius:5px">Low </p>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold">Request No.2345</h4>
+
+                            <div class="d-flex">
+                                <p class="me-5">Vechile Name</p>
+                                <p>Vechile Type</p>
+                            </div>
+                            <p>Model</p>
+                            <div class="d-flex">
+                                <p class="me-5">PO Number</p>
+                                <p class="ms-2">Invoice Number</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <hr class="fw-bold" style="border: 2px solid #5030E5">
-
-                <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
-                    <div>
-                        <div class="d-flex position-relative">
-                            <div class="d-flex align-items-baseline">
-                                <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
-                                <h4>Quotation</h4>
-                            </div>
-                            <div class="position-absolute top-0 end-0 " style="">
-                                <p class="p-1"
-                                    style="color: #D58D49; background-color: #dfa8749c; border-radius:5px">Urgent</p>
-                            </div>
-                        </div>
-                        <h4 class="fw-bold">Request No.2345</h4>
-
-                        <div class="d-flex">
-                            <p class="me-5">Vechile Name</p>
-                            <p>Vechile Type</p>
-                        </div>
-                        <p>Model</p>
-                        <div class="d-flex">
-                            <p class="me-5">PO Number</p>
-                            <p class="ms-2">Invoice Number</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
-                    <div>
-                        <div class="d-flex position-relative">
-                            <div class="d-flex align-items-baseline">
-                                <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
-                                <h4>Invoice</h4>
-                            </div>
-                            <div class="position-absolute top-0 end-0 " style="">
-                                <p class="p-1"
-                                    style="color: #D58D49; background-color: #dfa8749c; border-radius:5px">Low </p>
-                            </div>
-                        </div>
-                        <h4 class="fw-bold">Request No.2345</h4>
-
-                        <div class="d-flex">
-                            <p class="me-5">Vechile Name</p>
-                            <p>Vechile Type</p>
-                        </div>
-                        <p>Model</p>
-                        <div class="d-flex">
-                            <p class="me-5">PO Number</p>
-                            <p class="ms-2">Invoice Number</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
 
-            <div class="col-4 p-4" style="background-color: #F5F5F5; border-radius: 10px">
-                <div class="d-flex position-relative">
-                    <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-circle me-3" style="color: #FFA500"></i>
-                        <h5>On Progress <span class="badge"
-                                style="border-radius: 50%; background-color:#625f6db2;">3</span>
-                        </h5>
+            <div class="col-4">
+                <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
+                    <div class="d-flex position-relative">
+                        <div class="d-flex align-items-baseline">
+                            <i class="fa-solid fa-circle me-3" style="color: #FFA500"></i>
+                            <h5>On Progress <span class="badge"
+                                    style="border-radius: 50%; background-color:#625f6db2;">3</span>
+                            </h5>
+                        </div>
                     </div>
+                    <hr class="fw-bold" style="border: 2px solid #FFA500">
                 </div>
-                <hr class="fw-bold" style="border: 2px solid #FFA500">
             </div>
 
-            <div class="col-4 p-4" style="background-color: #F5F5F5; border-radius: 10px">
-                <div class="d-flex position-relative">
-                    <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-circle me-3" style="color: #76A5EA"></i>
-                        <h5>On Progress <span class="badge"
-                                style="border-radius: 50%; background-color:#625f6db2;">2</span>
-                        </h5>
+            <div class="col-4">
+                <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
+                    <div class="d-flex position-relative">
+                        <div class="d-flex align-items-baseline">
+                            <i class="fa-solid fa-circle me-3" style="color: #76A5EA"></i>
+                            <h5>On Progress <span class="badge"
+                                    style="border-radius: 50%; background-color:#625f6db2;">2</span>
+                            </h5>
+                        </div>
                     </div>
+                    <hr class="fw-bold" style="border: 2px solid #8BC48A">
                 </div>
-                <hr class="fw-bold" style="border: 2px solid #8BC48A">
             </div>
         </div>
     </div>
