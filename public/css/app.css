@@ -11359,17 +11359,28 @@ textarea.form-control-lg {
   padding: 0 15px;
 }
 
-#sidebar_menu li  {
-  line-height: unset;
+.sidebar-nav li .logo {
+    margin-left: 4px;
 }
-
 .sidebar-nav li .logo ,
 .sidebar-nav li a i {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     font-size: 20px;
+}
+#sidebar_menu li a:hover{
+  background-color: unset !important;
+}
+#sidebar_menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sidebar_menu li img {
+    height: fit-content;
 }
 .sidebar-nav li a {
   display: block;
+  cursor: pointer;
   text-decoration: none;
   border-radius: 20px;
   position: relative;
@@ -11380,7 +11391,7 @@ textarea.form-control-lg {
 }
 
 .sidebar-nav li a:hover {
-  color: #000 !important;
+  /* color: #000 !important; */
   /* background: #fff; */
   background-color: rgba(80, 48, 229, 0.08);
   text-decoration: none;
