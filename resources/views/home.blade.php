@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <div class="row mt-4">
-            <div class="col-lg-4 col-md-3">
+            <div class="col">
                 <div class="rectangle py-4 px-4">
                     <div class="rec-text d-flex align-items-center" style="justify-content: space-between;">
                         <div class="text-white" style="font-family: Poppins;">
@@ -25,7 +25,7 @@
 
     <div class="container">
         <div class="row mt-5 justify-content-between">
-            <div class="col-md">
+            <div class="col-lg mt-3">
                 <div class="parts py-4 px-4">
                     <div class="text-dark d-flex flex-column h-100">
                         <h4 style="font-weight:600; font-size:32px;font-style:normal;">11</h4>
@@ -35,7 +35,7 @@
 
                 </div>
             </div>
-            <div class="col-md">
+            <div class="col-lg mt-3">
                 <div class="parts py-4 px-4">
                     <div class="text-dark d-flex flex-column h-100">
                         <h4 style="font-weight:600; font-size:32px;font-style:normal;">2</h4>
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-lg mt-3">
                 <div class="parts py-4 px-4">
                     <div class="text-dark d-flex flex-column h-100">
                         <h4 class="fw-bold" style="font-weight:600; font-size:32px;font-style:normal;">4</h4>
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-lg mt-3">
                 <div class="parts py-4 px-4">
                     <div class="text-dark d-flex flex-column h-100">
                         <h4 style="font-weight:600; font-size:32px;font-style:normal;">6</h4>
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-lg mt-3">
                 <div class="parts py-4 px-4">
                     <div class="text-dark d-flex flex-column h-100">
                         <h4 class="fw-bold" style="font-weight:600; font-size:32px;font-style:normal;">16,000 SR</h4>
@@ -78,8 +78,8 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="col ">
-                <div class="btn-group same">
+            <div class="col-md">
+                <div class="btn-group same m.md mt-3">
                     <button class="btn btn-secondary dropdown-toggle py-3 px-5" type="button" id="defaultDropdown"
                         data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"
                         style="font-family: 'Inter';                                                                                                                                                        font-style: normal; font-weight: 500; font-size: 16px;">
@@ -87,8 +87,8 @@
                     </button>
                 </div>
 
-                <div class="btn-group same">
-                    <button class="btn btn-secondary dropdown-toggle py-3 px-5 ms-3" type="button" id="defaultDropdown"
+                <div class="btn-group same m.md mt-3">
+                    <button class="btn btn-secondary dropdown-toggle py-3 px-5" type="button" id="defaultDropdown"
                         data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"
                         style="font-family: 'Inter';                                                                                                                                                        font-style: normal; font-weight: 500; font-size: 16px;">
                         <i class="fa-solid fa-calendar"></i> Today
@@ -99,20 +99,20 @@
     </div>
 
     <div class="container">
-        <div class="row mt-4" style="">
-            <div class="col-4">
+        <div class="row mt-2 mt-md-4" style="">
+            <div class="col-lg  mt-5 m-lg-0">
                 <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
                     <div class="d-flex position-relative">
                         <div class="d-flex align-items-baseline">
                             <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
                             <h5 style="font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 16px;">To Do
-                                <span class="badge"
+                                <span class="badge ms-3"
                                     style="border-radius: 50%; background-color:#625f6db2;">4</span>
                             </h5>
                         </div>
                         <div>
                             <button class="fa fa-plus fs-4 p-1 position-absolute top-0 end-0"
-                                style="border-radius:7px; outline:none; color:#5030E5; background-color: #5130e56b; border:1px solid #5130e56b"></button>
+                                style="border-radius:7px; color:#5030E5; background-color: #5130e56b; border:none"></button>
                         </div>
                     </div>
                     <hr class="fw-bold" style="border: 2px solid #5030E5">
@@ -127,7 +127,7 @@
                                 <div class="position-absolute top-0 end-0 " style="">
                                     <p class="p-1"
                                         style="color: #D58D49; background-color: #dfa8749c; border-radius:5px; font-family: 'Inter';
-                                                                                                                                                                                                                    font-weight: 500; font-size: 12px;">
+                                                                                                                                                                                                                                                                                                                                                                                                    font-weight: 500; font-size: 12px;">
                                         Urgent
                                     </p>
                                 </div>
@@ -159,13 +159,13 @@
                                     <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
                                     <h4
                                         style="font-family: 'Inter';font-style: normal;font-weight: 500;
-                                                                                                                                                                                                    font-size: 16px;">
+                                                                                                                                                                                                                                                                                                                                                                                    font-size: 16px;">
                                         Invoice</h4>
                                 </div>
                                 <div class="position-absolute top-0 end-0 " style="">
                                     <p class="p-1"
                                         style="color: #D58D49; background-color: #dfa8749c; border-radius:5px; font-family: 'Inter';
-                                                                                                                                                                                        font-style: normal; font-weight: 500; font-size: 12px;">
+                                                                                                                                                                                                                                                                                                                                                                        font-style: normal; font-weight: 500; font-size: 12px;">
                                         Low
                                     </p>
                                 </div>
@@ -180,13 +180,13 @@
                                     Vechile Name</p>
                                 <p
                                     style="font-family: 'Inter';
-                                                                                                                                                    font-style: normal;font-weight: 400;font-size: 12px;">
+                                                                                                                                                                                                                                                                                                                                    font-style: normal;font-weight: 400;font-size: 12px;">
                                     Type
                                 </p>
                             </div>
                             <p
                                 style="font-family: 'Inter';
-                                                                                                                                                    font-style: normal;font-weight: 400;font-size: 12px;">
+                                                                                                                                                                                                                                                                                                                                    font-style: normal;font-weight: 400;font-size: 12px;">
                                 Model
                             </p>
                             <div class="d-flex">
@@ -204,13 +204,13 @@
             </div>
 
 
-            <div class="col-4">
+            <div class="col-lg  mt-5 m-lg-0">
                 <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
                     <div class="d-flex position-relative">
                         <div class="d-flex align-items-baseline">
                             <i class="fa-solid fa-circle me-3" style="color: #FFA500"></i>
                             <h5 style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 16px;">On
-                                Progress <span class="badge"
+                                Progress <span class="badge ms-3"
                                     style="border-radius: 50%; background-color:#625f6db2;">3</span>
                             </h5>
                         </div>
@@ -219,14 +219,13 @@
                 </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-lg  mt-5 m-lg-0">
                 <div class="p-4 h-100" style="background-color: #F5F5F5; border-radius: 10px">
                     <div class="d-flex position-relative">
                         <div class="d-flex align-items-baseline">
                             <i class="fa-solid fa-circle me-3" style="color: #76A5EA"></i>
                             <h5 style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 16px;">Done
-                                <span class="
-                                badge"
+                                <span class="badge ms-3"
                                     style="border-radius: 50%; background-color:#625f6db2;">2</span>
                             </h5>
                         </div>

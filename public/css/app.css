@@ -12426,6 +12426,8 @@ input {
 /* border-radius: 20px; */
 background-image: url(../assets/images/Rectangle\ 6.png);
 border-radius: 12px;
+width: 100%;
+max-width: 439px;
 
 }
 .parts
