@@ -12,39 +12,83 @@
             <h2 class="page-title">{{ __('Request 2536') }}</h2>
         </div>
         <form action="" class="form-group">
-            <div class="row pb-5">
-                <div class="col-md pb-md pb-3">
-                    <div class="pb-md-4 input-title">{{ __('Client') }}</div>
-                    <div class="input-sub-title">{{ __('Radayat Company') }}</div>
-                </div>
-                <div class="col-md">
-                    <div class="row">
-                        <div class="pb-2 input-title">{{ __('Purchase Order') }}</div>
-                        <input class="w-50" type="text" value="">
-                    </div>
-                </div>
-            </div>
-            <div class="row pb-md-5">
+            <div class="row m-auto pb-3">
                 <div class="col-md pb-3 pb-md">
-                    <div class="input-title pb-2">{{ __('Vehicle name') }}</div>
-                    <div class="input-sub-title">{{ __('Toyota') }}</div>
+                    <div class="input-title pb-2"><span class="input-title">Vehicle type</span></div>
+                    <div class="input-sub-title">Pick Up</div>
                 </div>
                 <div class="col-md pb-3 pb-md">
-                    <div class="input-title pb-2">{{ __('Vehicle type') }}</div>
-                    <div class="input-sub-title">{{ __('Pick Up') }}</div>
+                    <div class="input-title pb-2"><span class="input-title">Model</span></div>
+                    <div class="input-sub-title">2016</div>
                 </div>
                 <div class="col-md pb-3 pb-md">
-                    <div class="input-title pb-2">{{ __('Model') }}</div>
-                    <div class="input-sub-title">{{ __('2016') }}</div>
+                    <div class="input-title pb-2"><span class="input-title">Plate No.</span></div>
+                    <div class="input-sub-title">VAS 2671</div>
                 </div>
                 <div class="col-md pb-3 pb-md">
-                    <div class="input-title pb-2">{{ __('Plate No.') }}</div>
-                    <div class="input-sub-title">{{ __('VAS 2671') }}</div>
+                    <div class="input-title pb-2"><span class="input-title">Chase No.</span></div>
+                    <div class="input-sub-title">367784999499942</div>
                 </div>
-                <div class="col-md pb-3 pb-md">
-                    <div class="input-title pb-2">{{ __('Chase No.') }}</div>
-                    <div class="input-sub-title">{{ __('367784999499942') }}</div>
-                </div>
+
+                <table class="table table-responsive-stack table-borderless">
+                    <thead>
+                        <th style="flex-basis: 26%"><span class="input-title">Item Name</span></th>
+                        <th style="flex-basis: 26%"><span class="input-title">Item No.</span></th>
+                        <th style="flex-basis: 12%"><span class="input-title">Unit</span></th>
+                        <th style="flex-basis: 12%"><span class="input-title">Quantity</span></th>
+                        <th style="flex-basis: 12%"><span class="input-title">Unit Price</span></th>
+                        <th style="flex-basis: 12%"><span class="input-title">Total</span></th>
+                    </thead>
+                    <tbody>
+                        <tr class="pt-3">
+                            <td style="flex-basis: 26%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Item Name</span><span
+                                    class="input-sub-title">Air Filter and Conditioner</span></td>
+                            <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
+                                    class="input-group" style="max-width: 232px; width:100%;" autofocus></td>
+                            <td style="flex-basis: 12%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Unit</span><span
+                                    class="input-sub-title">Set</span>
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Quantity</span><span
+                                    class="input-sub-title">15</span>
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Unit Price</span><input type="text"
+                                    class="input-group" style="max-width: 75px; width:100%;">
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Total</span><input type="text"
+                                    class="input-group" style="max-width: 75px; width:100%;"></td>
+                        </tr>
+
+                        <tr class="pt-3">
+                            <td style="flex-basis: 26%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Item Name</span><span
+                                    class="input-sub-title">Air Filter and Conditioner</span></td>
+                            <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
+                                    class="input-group" style="max-width: 232px; width:100%;"></td>
+                            <td style="flex-basis: 12%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Unit</span><span
+                                    class="input-sub-title">Set</span>
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline"><span
+                                    class="input-title table-responsive-stack-thead">Quantity</span><span
+                                    class="input-sub-title">15</span>
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Unit Price</span><input type="text"
+                                    class="input-group" style="max-width: 75px; width:100%;">
+                            </td>
+                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
+                                    class="input-title table-responsive-stack-thead">Total</span><input type="text"
+                                    class="input-group" style="max-width: 75px; width:100%;"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="row justify-content-between">
@@ -137,16 +181,22 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
             <div class="row mt-5">
                 <div class="col">
+                    <span><a href="javascipt:void(0)" onclick="fire_upload_swal()" style="color: #170F49;">Attach Request
+                            Pdf</a></span>
+                </div>
+
+                {{-- buttons --}}
+                <div class="col">
                     <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                        <button type="button" class="btn btn-danger m-2">
+                        <button type="reset" class="btn btn-danger m-2">
                             Cancel
                         </button>
-                        <button type="button" class="btn btn-primary m-2">
+                        <button type="submit" class="btn btn-primary m-2">
                             Confirm
                         </button>
                     </div>
@@ -155,3 +205,31 @@
         </form>
     </div>
 @endsection
+@push('js')
+    <script>
+        async function fire_upload_swal() {
+            const {
+                value: file
+            } = await Swal.fire({
+                title: 'Select image',
+                input: 'file',
+                inputAttributes: {
+                    'accept': 'image/*',
+                    'aria-label': 'Upload your profile picture'
+                }
+            })
+
+            if (file) {
+                const reader = new FileReader()
+                reader.onload = (e) => {
+                    Swal.fire({
+                        title: 'Your uploaded picture',
+                        imageUrl: e.target.result,
+                        imageAlt: 'The uploaded picture'
+                    })
+                }
+                reader.readAsDataURL(file)
+            }
+        }
+    </script>
+@endpush

@@ -150,10 +150,10 @@
             <div class="row mt-5">
                 <div class="col">
                     <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                        <button type="button" class="btn btn-danger m-2">
+                        <button type="reset" class="btn btn-danger m-2">
                             Cancel
                         </button>
-                        <button type="button" class="btn btn-primary m-2">
+                        <button type="submit" class="btn btn-primary m-2">
                             Confirm
                         </button>
                     </div>

@@ -55,7 +55,7 @@
                                     class="input-sub-title">Air Filter and Conditioner</span></td>
                             <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
                                     class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
-                                    class="input-group" style="max-width: 232px; width:100%;"></td>
+                                    class="input-group" style="max-width: 232px; width:100%;" autofocus></td>
                             <td style="flex-basis: 12%" class="align-self-baseline"><span
                                     class="input-title table-responsive-stack-thead">Unit</span><span
                                     class="input-sub-title">Set</span>
@@ -120,16 +120,16 @@
 
             <div class="row mt-5">
                 <div class="col">
-                    <span><a href="#" style="color: #170F49;">Attach Request Pdf</a></span>
+                    <span><a href="javascipt:void(0)" onclick="fire_upload_swal()" style="color: #170F49;">Attach Request Pdf</a></span>
                 </div>
 
                 {{-- buttons --}}
                 <div class="col">
                     <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                        <button type="button" class="btn btn-danger m-2">
+                        <button type="reset" class="btn btn-danger m-2">
                             Cancel
                         </button>
-                        <button type="button" class="btn btn-primary m-2">
+                        <button type="submit" class="btn btn-primary m-2">
                             Confirm
                         </button>
                     </div>
@@ -138,3 +138,31 @@
         </form>
     </div>
 @endsection
+@push('js')
+    <script>
+         async function fire_upload_swal() {
+            const {
+                value: file
+            } = await Swal.fire({
+                title: 'Select image',
+                input: 'file',
+                inputAttributes: {
+                    'accept': 'image/*',
+                    'aria-label': 'Upload your profile picture'
+                }
+            })
+
+            if (file) {
+                const reader = new FileReader()
+                reader.onload = (e) => {
+                    Swal.fire({
+                        title: 'Your uploaded picture',
+                        imageUrl: e.target.result,
+                        imageAlt: 'The uploaded picture'
+                    })
+                }
+                reader.readAsDataURL(file)
+            }
+        }
+    </script>
+@endpush

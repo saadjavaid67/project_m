@@ -15,12 +15,6 @@
         <div class="row pb-md-5">
 
             <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Client</span></div>
-                <div class="input-sub-title">Redayat Company</div>
-            </div>
-
-
-            <div class="col-md pb-3 pb-md">
                 <div class="input-title pb-2"><span class="input-title">Purchase Order No.</span></div>
                 <div class="input-sub-title">123456789</div>
             </div>

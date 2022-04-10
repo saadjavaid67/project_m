@@ -18,6 +18,36 @@ class ProductRequestController extends Controller
     }
 
     /**
+     *  Show new request page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function new_request_show()
+    {
+        return view('product.request.new_request');
+    }
+
+    /**
+     *  Show detail page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function detail_show()
+    {
+        return view('product.request.detail');
+    }
+
+    /**
+     *  Show finalize page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function finalize_show()
+    {
+        return view('product.request.finalize');
+    }
+
+    /**
      * Show supplier quotation page.
      *
      * @return \Illuminate\Http\Response
@@ -52,9 +82,19 @@ class ProductRequestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function pick_up()
+    public function pick_up_show()
     {
         return view('product.request.pick_up');
+    }
+
+    /**
+     * Show delivery page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function delivery_show()
+    {
+        return view('product.request.delivery');
     }
 
     /**
