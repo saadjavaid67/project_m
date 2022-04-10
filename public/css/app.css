@@ -12537,3 +12537,22 @@ max-width: 439px;
     border-radius:15px;
 }
 /* END:Responsive stacked table */
+
+
+/* START: Product request-detail */
+/* .request-detail .fa-solid{
+  color: #6FCF97;
+  font-size: 2rem;
+}
+
+.request-detail{
+  color: #1CC363;
+  font-size: 0.9375rem;
+}
+
+.request-detail, .request-progress{
+  background-color: #ECF5FE;
+  border-radius: 40px;
+  padding: 1px 5px;
+} */
+/* END: Product detail checks */
