@@ -48,6 +48,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     * Show pick up page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function pick_up()
+    {
+        return view('product.request.pick_up');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
