@@ -38,6 +38,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     * Show purchase order page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function purchase_order_show()
+    {
+        return view('product.request.purchase_order');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
