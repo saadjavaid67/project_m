@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/product/request', [App\Http\Controllers\ProductRequestController::class, 'index'])->name('product.request');
 Route::get('/product/request/supplier/quotation', [App\Http\Controllers\ProductRequestController::class, 'supplier_quotation_show'])->name('product.request.supplier.quotation.show');
+Route::get('/product/request/prepare/quotation', [App\Http\Controllers\ProductRequestController::class, 'prepare_quotation_show'])->name('product.request.prepare.quotation.show');
