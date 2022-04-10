@@ -186,8 +186,7 @@
 
             <div class="row mt-5">
                 <div class="col">
-                    <span><a href="javascipt:void(0)" onclick="fire_upload_swal()" style="color: #170F49;">Attach Request
-                            Pdf</a></span>
+                   
                 </div>
 
                 {{-- buttons --}}
@@ -205,31 +204,3 @@
         </form>
     </div>
 @endsection
-@push('js')
-    <script>
-        async function fire_upload_swal() {
-            const {
-                value: file
-            } = await Swal.fire({
-                title: 'Select image',
-                input: 'file',
-                inputAttributes: {
-                    'accept': 'image/*',
-                    'aria-label': 'Upload your profile picture'
-                }
-            })
-
-            if (file) {
-                const reader = new FileReader()
-                reader.onload = (e) => {
-                    Swal.fire({
-                        title: 'Your uploaded picture',
-                        imageUrl: e.target.result,
-                        imageAlt: 'The uploaded picture'
-                    })
-                }
-                reader.readAsDataURL(file)
-            }
-        }
-    </script>
-@endpush
