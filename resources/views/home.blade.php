@@ -129,14 +129,14 @@
                     <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
                         <div class="ff-inter">
                             <div class="d-flex position-relative">
-                                <div class="d-flex align-items-baseline">
-                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5; "></i>
-                                    <p class="m-1">Invoice</p>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5; font-size: 8px;"></i>
+                                    <p class="m-1 ">Quotation</p>
                                 </div>
                                 <div class="position-absolute top-0 end-0 ">
                                     <p class="p-1"
                                         style="color: #D58D49; background-color: #dfa8749c; border-radius:5px; font-size: 12px;">
-                                        Low
+                                        Urgent
                                     </p>
                                 </div>
                             </div>
@@ -164,8 +164,8 @@
                     <div class="mt-4 p-4" style="background-color:#FFFFFF; border-radius:10px">
                         <div class="ff-inter">
                             <div class="d-flex position-relative">
-                                <div class="d-flex align-items-baseline">
-                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5"></i>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle me-3" style="color: #5030E5; font-size:8px"></i>
                                     <p class="m-1">Invoice</p>
                                 </div>
                                 <div class="position-absolute top-0 end-0 ">
