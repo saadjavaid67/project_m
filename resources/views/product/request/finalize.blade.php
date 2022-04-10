@@ -58,81 +58,19 @@
 
         {{-- form --}}
         <form class="form-group" action="">
-            {{-- <div class="row m-auto pb-3">
-                <table class="table table-responsive-stack table-borderless">
-                    <thead>
-                        <th style="flex-basis: 26%"><span class="input-title">Item Name</span></th>
-                        <th style="flex-basis: 26%"><span class="input-title">Item No.</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Unit</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Quantity</span></th>
-                        <th style="flex-basis: 5%" class="text-center"><span class="input-title">Received</span></th>
-                    </thead>
-                    <tbody>
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span>12345678909</td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 5%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Received</span><input type="checkbox"
-                                    class="input-group mx-auto" style="max-width: 50px; width:100%;">
-                            </td>
-                        </tr>
-
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span>12334568765</td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 5%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Received</span><input type="checkbox"
-                                    class="input-group mx-auto" style="max-width: 50px; width:100%;">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="form-group">
-
-                <div class="row">
-                    <div class="col-md">
-                        <textarea placeholder="Comment" id="floatingTextarea2" class="w-100 p-4" style="height: 100px"
-                            autofocus></textarea>
-
-                    </div>
-                </div>
-            </div> --}}
             <div class="container">
 
                 <div class="row">
-                    <div class="col-2">
-                        <div class="py-5 px-2 h-100 me-5 dba">
+                    <div class="col-md-2">
+                        <div class="py-5 mb-4 px-2 h-100 me-md-5 m-0 dba">
 
                         </div>
+                        <span><a href="#" style="color: #170F49;">Attach Invoice</a></span>
                     </div>
 
-                    <div class="col"></div>
+                    <div class="col-md"></div>
 
-                    <div class="col-md-3 col border p-3 invoice-card justify-content-end" style="">
+                    <div class="col-md-3 mt-md-0 mt-5 col border p-3 invoice-card justify-content-end" style="">
                         <div class="row border-bottom p-2">
                             <div class="col"><span class="input-title">Subtotal</span></div>
                             <div class="col text-center"><span>-</span></div>
@@ -149,21 +87,8 @@
                 </div>
             </div>
 
-            {{-- buttons --}}
-            {{-- <div class="col mt-5">
-                <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                    <button type="reset" class="btn btn-danger m-2">
-                        Cancel
-                    </button>
-                    <button type="submit" class="btn btn-primary m-2">
-                        Confirm
-                    </button>
-                </div>
-            </div> --}}
-
             <div class="row mt-5">
-                <div class="col ms-4">
-                    <span><a href="#" style="color: #170F49;">Attach Invoice</a></span>
+                <div class="col">
                 </div>
 
                 {{-- buttons --}}
@@ -178,7 +103,6 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </form>
+        </form>
     </div>
 @endsection
