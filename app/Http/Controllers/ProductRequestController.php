@@ -18,6 +18,26 @@ class ProductRequestController extends Controller
     }
 
     /**
+     *  Show new request page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function new_request_show()
+    {
+        return view('product.request.new_request');
+    }
+
+    /**
+     *  Show detail page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function detail_show()
+    {
+        return view('product.request.detail');
+    }
+
+    /**
      * Show supplier quotation page.
      *
      * @return \Illuminate\Http\Response

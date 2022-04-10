@@ -20,9 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/product/request', [App\Http\Controllers\ProductRequestController::class, 'index'])->name('product.request');
+Route::get('/product/request/new', [App\Http\Controllers\ProductRequestController::class, 'new_request_show'])->name('product.request.new.show');
 Route::get('/product/request/supplier/quotation', [App\Http\Controllers\ProductRequestController::class, 'supplier_quotation_show'])->name('product.request.supplier.quotation.show');
 Route::get('/product/request/prepare/quotation', [App\Http\Controllers\ProductRequestController::class, 'prepare_quotation_show'])->name('product.request.prepare.quotation.show');
 Route::get('/product/request/purchase/order', [App\Http\Controllers\ProductRequestController::class, 'purchase_order_show'])->name('product.request.purchase.order.show');
 Route::get('/product/request/pick/up', [App\Http\Controllers\ProductRequestController::class, 'pick_up_show'])->name('product.request.pick.up.show');
 Route::get('/product/request/delivery', [App\Http\Controllers\ProductRequestController::class, 'delivery_show'])->name('product.request.delivery.show');
+Route::get('/product/request/finalize', [App\Http\Controllers\ProductRequestController::class, 'finalize_show'])->name('product.request.finalize.show');
+Route::get('/product/request/detail', [App\Http\Controllers\ProductRequestController::class, 'detail_show'])->name('product.request.detail.show');
