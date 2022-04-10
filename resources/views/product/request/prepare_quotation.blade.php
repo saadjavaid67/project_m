@@ -45,10 +45,10 @@
                 <thead>
                     <th style="flex-basis: 22%"><span class="input-title">Item Name</span></th>
                     <th style="flex-basis: 17%"><span class="input-title">Item No.</span></th>
-                    <th style="flex-basis: 6%"><span class="input-title">Unit</span></th>
+                    <th style="flex-basis: 7%"><span class="input-title">Unit</span></th>
                     <th style="flex-basis: 8%"><span class="input-title">Quantity</span></th>
                     <th style="flex-basis: 8%"><span class="input-title">Unit Price</span></th>
-                    <th style="flex-basis: 6%"><span class="input-title">Total</span></th>
+                    <th style="flex-basis: 7%"><span class="input-title">Total</span></th>
                     <th style="flex-basis: 9%"><span class="input-title">Unit Price 1</span></th>
                     <th style="flex-basis: 9%"><span class="input-title">Unit Price 2</span></th>
                     <th style="flex-basis: 9%"><span class="input-title">Unit Price 3</span></th>
@@ -61,7 +61,7 @@
                         <td style="flex-basis: 17%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Item No.</span><span
                                 class="input-sub-title">66577783889</span></td>
-                        <td style="flex-basis: 6%" class="align-self-baseline"><span
+                        <td style="flex-basis: 7%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Unit</span><span
                                 class="input-sub-title">Set</span>
                         </td>
@@ -73,7 +73,7 @@
                                 class="input-title table-responsive-stack-thead">Unit Price</span><span
                                 class="input-sub-title">100</span>
                         </td>
-                        <td style="flex-basis: 6%" class="align-self-baseline" class=""><span
+                        <td style="flex-basis: 7%" class="align-self-baseline" class=""><span
                                 class="input-title table-responsive-stack-thead">Total</span><span class="input-sub-title">
                                 1500</span></td>
                         <td style="flex-basis: 9%" class="align-self-baseline" class=""><span
@@ -90,7 +90,7 @@
             </table>
 
             <div class="row justify-content-between">
-                <div class="col-md m-5 border px-4 py-2"
+                <div class="col-lg m-3 m-md-5 border px-4 py-2"
                     style="border-radius: 15px; box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);">
                     <div class="row border-bottom p-2">
                         <div class="input-title pb-3 border-bottom text-center mb-2"><span style="font-size: 22px;"
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="col-md m-5 border px-4 py-2"
+                <div class="col-lg m-3 m-md-5 border px-4 py-2"
                     style="border-radius: 15px; box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);">
                     <div class="row border-bottom p-2">
                         <div class="input-title pb-3 border-bottom text-center mb-2"><span style="font-size: 22px;"
@@ -126,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="col-md m-5 border px-4 py-2"
+                <div class="col-lg m-3 m-md-5 border px-4 py-2"
                     style="border-radius: 15px; box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);">
                     <div class="row border-bottom p-2">
                         <div class="input-title pb-3 border-bottom text-center mb-2"><span style="font-size: 22px;"
