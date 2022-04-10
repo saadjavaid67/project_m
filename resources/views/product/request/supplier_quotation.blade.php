@@ -15,7 +15,7 @@
 
         {{-- form --}}
         <form class="form-group" action="" class="row">
-            <div class="row pb-5">
+            <div class="row pb-5 m-auto">
                 <div class="col-md pb-3 pb-md">
                     <div class="input-title pb-2"><span class="input-title">Vehicle name</span></div>
                     <div class="input-sub-title">Toyota</div>
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="row pb-3">
+            <div class="row pb-2 m-auto">
                 <table class="table table-responsive table-borderless">
                     <thead>
                         <td><span class="input-title">Item Name</span></td>
@@ -51,26 +51,19 @@
                     <tbody>
                         <tr class="align-baseline">
                             <td><span class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td><input type="text" class="input-group"></div></td>
+                            <td class=""><input type="text" class="input-group" style="max-width: 232px; width:100%;"></div></td>
                             <td><span class="input-sub-title">Set</span></td>
-                            <td><span class="input-sub-title">15</span></td>
-                            <td><input type="text" class="input-group"></div></td>
-                            <td><input type="text" class="input-group"></div></td>
+                            <td><span class="input-sub-title ps-4">15</span></td>
+                            <td class=""><input type="text" class="input-group" style="max-width: 75px; width:100%;"></div></td>
+                            <td class=""><input type="text" class="input-group" style="max-width: 75px; width:100%;"></div></td>
                         </tr>
-
-                        <tr class="align-baseline">
-                            <td><span class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td><input type="text" class="input-group"></div></td>
-                            <td><span class="input-sub-title">Set</span></td>
-                            <td><span class="input-sub-title">15</span></td>
-                            <td><input type="text" class="input-group"></div></td>
-                            <td><input type="text" class="input-group"></div></td>
-                        </tr>
+                       
+                        
                     </tbody>
                   </table>
             </div>
             <div class="row justify-content-end">
-                <div class="col-md-3 col border p-3" style="border-radius: 15px; box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);">
+                <div class="col-md-3 col border p-3 invoice-card" style="">
                     <div class="row border-bottom p-2">
                         <div class="col"><span class="input-title">Subtotal</span></div>
                         <div class="col text-center"><span>-</span></div>
