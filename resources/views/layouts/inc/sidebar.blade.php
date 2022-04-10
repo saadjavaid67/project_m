@@ -13,11 +13,11 @@
             </li>
         </ul>
         <ul class="sidebar-nav border-bottom py-3" id="sidebar">
-            <li><a><i class="fas fa-border-all"></i><span>Home</span></a></li>
-            <li><a><i class="fas fa-message"></i><span>Contacts</span></a></li>
-            <li><a><i class="fas fa-user-group"></i><span>Members</span></a></li>
-            <li><a><i class="fas fa-list-check"></i><span>Tasks</span></a></li>
-            <li><a><i class="fas fa-gear"></i><span>Settings</span></a></li>
+            <li><a><img src="{{ asset('assets/icons/category.png') }}" alt=""><span>Home</span></a></li>
+            <li><a><img src="{{ asset('assets/icons/message.png') }}" alt=""><span>Contacts</span></a></li>
+            <li><a><img src="{{ asset('assets/icons/profile-2user.png') }}" alt=""><span>Members</span></a></li>
+            <li><a><img src="{{ asset('assets/icons/task-square.png') }}" alt=""><span>Tasks</span></a></li>
+            <li><a><img src="{{ asset('assets/icons/setting-2.png') }}" alt=""><span>Settings</span></a></li>
         </ul>
     </div>
 </div>
