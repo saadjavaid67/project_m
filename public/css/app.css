@@ -104,7 +104,7 @@ hr {
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
+  /* opacity: 0.25; */
 }
 
 hr:not([size]) {
@@ -12465,4 +12465,10 @@ max-width: 439px;
 .invoice-card {
   border-radius: 15px;
   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+}
+
+.ff-inter{
+    font-family: 'Inter' !important;
+    font-weight: 500;
+    font-size: 16px;
 }
