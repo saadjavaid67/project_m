@@ -2,132 +2,282 @@
 
 @push('css')
     <style>
+             .fa-solid {
+            font-size: 1.9rem;
+            color: #6FCF97;
+            margin: 10px !important;
+        }
+
+        .box {
+            border: 1px solid #BDBDBD;
+            min-height: 143px;
+            height: 100%;
+            max-width: 128px;
+            width: 100%;
+            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+            border-radius: 15px;
+        }
+
+        a {
+            color: #170F49;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        @media(max-width:768px) {
+            .border-end {
+                border-right: none !important;
+            }
+        }
 
     </style>
 @endpush
 
 @section('content')
-    <div class="container mt-4">
-        <div class="row text-center border-bottom pb-2 mb-5">
-            <h2 class="page-title">{{ __('Request 2536') }}</h2>
-        </div>
+    <div class="container-fluid">
+        <div class="row">
+            {{-- New Request --}}
+            <div class="col-lg-9 border-end">
 
-        <div class="row pb-md-5">
+                <h2 class="text-center border-bottom p-2">{{ __('Request 2536') }}</h2>
 
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Client</span></div>
-                <div class="input-sub-title">Redayat Company</div>
-            </div>
+                <div class="row justify-content-between text-center icons">
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('New Request') }}</div class="">
+                    </div>
+
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('3 Quotations') }}</div class="">
+                    </div>
+
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('Purchase Order') }}</div class="">
+                    </div>
+
+                    
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('Pick Up') }}</div class="">
+                    </div>
+
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('Delivered') }}</div class="">
+                    </div>
+
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('Invoice') }}</div class="">
+                    </div>
+
+                    <div class="col-lg">
+                        <i class="fa-solid fa-circle-check m-1" style="color: #BDBDBD;"></i>
+                        <div class="request-progress"
+                            style="background: #BDBDBD; border-radius:40px;color:#828282; font-size:15px;">
+                            {{ __('Paid') }}</div class="">
+                    </div>
+                </div>
+
+                {{-- <div class="row justify-content-between mt-5 check-icons">
+                    <div class="col-md text-center ">
+                            <i class="fa-solid fa-circle-check m-1"></i>
+                            <div class="request-progress"><span>{{ __('New Request') }}</span></div class="">
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"><span>{{ __('3 Quotations') }}</span></div class="">
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"><span>{{ __('Purchase Order') }}</span></div class="">
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"><span>{{ __('Pick Up') }}</span></div class="">
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
+                        <div class="request-progress bg-gray text-gray"><span>{{ __('Deliverd') }}</span></div>
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
+                        <div class="request-progress bg-gray text-gray"><span>{{ __('Invoice') }}</span></div>
+                    </div>
+
+                    <div class="col-md text-center">
+                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
+                        <div class="request-progress bg-gray text-gray"><span>{{ __('Paid') }}</span></div>
+                    </div>
+                </div> --}}
 
 
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Purchase Order No.</span></div>
-                <div class="input-sub-title">123456789</div>
-            </div>
 
-        </div>
+                <div class="row mt-5">
+                    <div class="col-lg">
+                        <div class="row pb-lg pb-3 justify-content-between">
+                            <div class="pb-lg-2"><span class="input-title">{{ __('Client') }}</span></div>
+                            <div class="input-sub-title">{{ __('Radayat Company') }}</div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <div class="pb-lg-2"><span class="input-title">{{ __('PO No.') }}</span></div>
+                                <div class="input-sub-title">{{ __('Pick Up') }}</div>
+                            </div>
+                            <div class="col">
+                                <div class="pb--lg2"><span class="input-title">{{ __('Invoice No.') }}</span>
+                                </div>
+                                <div class="input-sub-title">{{ __('2016') }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row pb-md-5">
+                <div class="row mt-5">
+                    <div class="col-md pb-3 pb-md">
+                        <div class="pb-lg-2"><span class="input-title">{{ __('Vehicle name') }}</span></div>
+                        <div class="input-sub-title">{{ __('Toyota') }}</div>
+                    </div>
+                    <div class="col-md pb-3 pb-md">
+                        <div class="pb-lg-2"><span class="input-title">{{ __('Vehicle type') }}</span></div>
+                        <div class="input-sub-title">{{ __('Pick Up') }}</div>
+                    </div>
+                    <div class="col-md pb-3 pb-md">
+                        <div class="pb-lg-2"><span class="input-title">{{ __('Model') }}</span></div>
+                        <div class="input-sub-title">{{ __('2016') }}</div>
+                    </div>
+                    <div class="col-md pb-3 pb-md">
+                        <div class="pb-lg-2"><span class="input-title">{{ __('Plate No.') }}</span></div>
+                        <div class="input-sub-title">{{ __('VAS 2671') }} </div>
+                    </div>
+                    <div class="col-md pb-3 pb-md">
+                        <div class="pb-lg-2"><span class="input-title">{{ __('Chase No.') }}</span></div>
+                        <div class="input-sub-title">{{ __('367784999499942') }}</div>
+                    </div>
+                </div>
 
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Vehicle name</span></div>
-                <div class="input-sub-title">Toyota</div>
-            </div>
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Vehicle type</span></div>
-                <div class="input-sub-title">Pick Up</div>
-            </div>
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Model</span></div>
-                <div class="input-sub-title">2016</div>
-            </div>
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Plate No.</span></div>
-                <div class="input-sub-title">VAS 2671</div>
-            </div>
-            <div class="col-md pb-3 pb-md">
-                <div class="input-title pb-2"><span class="input-title">Chase No.</span></div>
-                <div class="input-sub-title">367784999499942</div>
-            </div>
-        </div>
+                <div class="row pb-5 mt-5 border-bottom mx-auto">
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Request') }}</a>
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Quotation 1') }}</a>
+                    </div>
 
-        {{-- form --}}
-        <form class="form-group" action="">
-            <div class="row m-auto pb-3">
-                <table class="table table-responsive-stack table-borderless">
-                    <thead>
-                        <th style="flex-basis: 26%"><span class="input-title">Item Name</span></th>
-                        <th style="flex-basis: 26%"><span class="input-title">Item No.</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Unit</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Quantity</span></th>
-                        <th style="flex-basis: 5%" class="text-center"><span class="input-title">Received</span></th>
-                    </thead>
-                    <tbody>
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span>12345678909</td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 5%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Received</span><input type="checkbox"
-                                    class="input-group mx-auto" style="max-width: 50px; width:100%;">
-                            </td>
-                        </tr>
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Quotation 2') }}</a>
+                    </div>
 
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span>12334568765</td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-center"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 5%" class="align-self-center" class=""><span
-                                    class="input-title table-responsive-stack-thead">Received</span><input type="checkbox"
-                                    class="input-group mx-auto" style="max-width: 50px; width:100%;">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Quotation 3') }}</a>
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Delivery No.') }}</a>
+                    </div>
+                    <div class="col-lg text-center">
+                        <div class="box border rounded"></div>
+                        <a class="" href="#">{{ __('Invoice') }}</a>
+                    </div>
+                </div>
 
-            <div class="form-group">
+                <div class="row mt-5 justify-content-md-start justify-content-around">
+                    <div class="col-lg-2 request-detail text-center">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress">{{ __('Quotation') }}</div class="">
+                    </div>
 
-                <div class="row">
-                    <div class="col-md">
-                        <textarea placeholder="Comment" id="floatingTextarea2" class="w-100 p-4" style="height: 100px" autofocus></textarea>
+                    <div class="col-lg-2 request-detail text-center">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress">{{ __('Invoice') }}</div class="">
+                    </div>
 
+                    <div class="col-lg-2 request-detail text-center">
+                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
+                        <div class="request-progress bg-gray text-gray">{{ __('Paid') }}</div class="">
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg">
+                        <div class="row justify-content-between">
+                            <div class="pb-2"><span class="input-title">{{ __('Store Name') }}</span>
+                            </div>
+                            <div class="input-sub-title">{{ __('Radayat Company') }}</div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <div class="pb-2"><span class="input-title">{{ __('Quotation') }}</span>
+                                </div>
+                                <div class="input-sub-title">{{ __('Toyota') }}</div>
+                            </div>
+                            <div class="col">
+                                <div class="pb-2"><span class="input-title">{{ __('Invoice No.') }}</span>
+                                </div>
+                                <div class="input-sub-title">{{ __('Toyota') }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- buttons --}}
+                <div class="row align-items-baseline mt-5">
+                    <div class="col-lg">
+                        <div class="row">
+                            <div class="col-lg text-center">
+                                <div class="box border rounded"></div>
+                                <a class="" href="#">{{ __('Store Quotation') }}</a>
+                            </div>
+                            <div class="col-lg text-center">
+                                <div class="box border rounded"></div>
+                                <a class="" href="#">{{ __('Purchase Invoice') }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
+                            <button type="reset" class="btn btn-danger m-2">
+                                {{ __('Cancel') }}
+                            </button>
+                            <button type="submit" class="btn btn-primary m-2">
+                                {{ __('Confirm') }}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            {{-- buttons --}}
-            <div class="col mt-5">
-                <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                    <button type="reset" class="btn btn-danger m-2">
-                        Cancel
-                    </button>
-                    <button type="submit" class="btn btn-primary m-2">
-                        Confirm
-                    </button>
-                </div>
+            {{-- Progress Report --}}
+            <div class="col-md">
+                <h2 class="border-bottom text-center p-2">{{ __('Progress Report') }}</h2>
             </div>
-    </div>
-    </form>
+        </div>
     </div>
 @endsection
