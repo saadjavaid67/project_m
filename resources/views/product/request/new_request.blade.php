@@ -4,19 +4,18 @@
     <style>
         @keyframes append-animate {
             from {
-                transform: scale(0);
+                transform: translateY(-80px);
                 opacity: 0;
             }
 
             to {
-                transform: scale(1);
                 opacity: 1;
             }
         }
 
         /* animate new box */
         .item-transition {
-            animation: append-animate .3s linear;
+            animation: append-animate 1s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
 
     </style>
