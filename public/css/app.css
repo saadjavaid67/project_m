@@ -12326,17 +12326,16 @@ input {
 }
 
 .input-title {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   color: #170F49;
-  color: #170F49;
-  font-weight: 500;
-  font-size: 18px;
+  align-self: center;
 }
 
 .input-sub-title {
   font-size: 18px;
+  align-self: center;
   font-weight: 500;
   color: #797979;
 }
@@ -12472,3 +12471,51 @@ max-width: 439px;
     font-weight: 500;
     font-size: 16px;
 }
+
+/* BEGIN:Responsive stacked table */
+
+.table-responsive-stack tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+   display:block;
+/*
+   flex-grow | flex-shrink | flex-basis   */
+   -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead {
+   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+   .table-responsive-stack tr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      /* border-bottom: 3px solid #ccc; */
+      display:block;
+
+   }
+   /*  IE9 FIX   */
+   .table-responsive-stack td {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #EFF0F7;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 15px;
+   }
+}
+/* END:Responsive stacked table */
