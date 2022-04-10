@@ -43,79 +43,49 @@
         <form class="form-group" action="" class="row">
             <table class="table table-responsive-stack table-borderless">
                 <thead>
-                    <th style="flex-basis: 24%"><span class="input-title">Item Name</span></th>
-                    <th style="flex-basis: 18%"><span class="input-title">Item No.</span></th>
-                    <th style="flex-basis: 8%"><span class="input-title">Unit</span></th>
+                    <th style="flex-basis: 22%"><span class="input-title">Item Name</span></th>
+                    <th style="flex-basis: 17%"><span class="input-title">Item No.</span></th>
+                    <th style="flex-basis: 6%"><span class="input-title">Unit</span></th>
                     <th style="flex-basis: 8%"><span class="input-title">Quantity</span></th>
                     <th style="flex-basis: 8%"><span class="input-title">Unit Price</span></th>
-                    <th style="flex-basis: 8%"><span class="input-title">Total</span></th>
-                    <th style="flex-basis: 8%"><span class="input-title">Unit Price 1</span></th>
-                    <th style="flex-basis: 8%"><span class="input-title">Unit Price 2</span></th>
-                    <th style="flex-basis: 8%"><span class="input-title">Unit Price 3</span></th>
+                    <th style="flex-basis: 6%"><span class="input-title">Total</span></th>
+                    <th style="flex-basis: 9%"><span class="input-title">Unit Price 1</span></th>
+                    <th style="flex-basis: 9%"><span class="input-title">Unit Price 2</span></th>
+                    <th style="flex-basis: 9%"><span class="input-title">Unit Price 3</span></th>
                 </thead>
                 <tbody>
                     <tr class="pt-3">
-                        <td style="flex-basis: 24%" class="align-self-baseline"><span
+                        <td style="flex-basis: 22%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Item Name</span><span
                                 class="input-sub-title">Air Filter and Conditioner</span></td>
-                        <td style="flex-basis: 18%" class="align-self-baseline" class=""><span
+                        <td style="flex-basis: 17%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Item No.</span><span
                                 class="input-sub-title">66577783889</span></td>
-                        <td style="flex-basis: 8%" class="align-self-baseline"><span
+                        <td style="flex-basis: 6%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Unit</span><span
                                 class="input-sub-title">Set</span>
                         </td>
-                        <td style="flex-basis: 8%" class="align-self-baseline"><span-
+                        <td style="flex-basis: 8%" class="align-self-baseline"><span
                                 class="input-title table-responsive-stack-thead">Quantity</span><span
                                 class="input-sub-title">15</span>
                         </td>
                         <td style="flex-basis: 8%" class="align-self-baseline" class=""><span
                                 class="input-title table-responsive-stack-thead">Unit Price</span><span
-                                class="input-title">100</span>
+                                class="input-sub-title">100</span>
                         </td>
-                        <td style="flex-basis: 10%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Total</span
-                                class="input-sub-title"><span></span></td>
-                        <td style="flex-basis: 8%" class="align-self-baseline" class="">
-
-                        </td>
-                        <td style="flex-basis: 10%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Total</span
-                                class="input-sub-title"><span></span></td>
-                        <td style="flex-basis: 8%" class="align-self-baseline" class="">
-
-                        </td>
-                        <td style="flex-basis: 10%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Total</span
-                                class="input-sub-title"><span></span></td>
-                        <td style="flex-basis: 8%" class="align-self-baseline" class="">
-
-                        </td>
-                    </tr>
-
-                    {{-- <tr class="pt-3">
-                        <td style="flex-basis: 26%" class="align-self-baseline"><span
-                                class="input-title table-responsive-stack-thead">Item Name</span><span
-                                class="input-sub-title">Air Filter and Conditioner</span></td>
-                        <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
-                                class="input-group" style="max-width: 232px; width:100%;"></td>
-                        <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                class="input-title table-responsive-stack-thead">Unit</span><span
-                                class="input-sub-title">Set</span>
-                        </td>
-                        <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                class="input-title table-responsive-stack-thead">Quantity</span><span
-                                class="input-sub-title">15</span>
-                        </td>
-                        <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Unit Price</span><input type="text"
-                                class="input-group" style="max-width: 75px; width:100%;">
-                        </td>
-                        <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                class="input-title table-responsive-stack-thead">Total</span><input type="text"
+                        <td style="flex-basis: 6%" class="align-self-baseline" class=""><span
+                                class="input-title table-responsive-stack-thead">Total</span><span class="input-sub-title">
+                                1500</span></td>
+                        <td style="flex-basis: 9%" class="align-self-baseline" class=""><span
+                                class="input-title table-responsive-stack-thead">Unit Price 1</span><input type="text"
                                 class="input-group" style="max-width: 75px; width:100%;"></td>
-                    </tr> --}}
+                        <td style="flex-basis: 9%" class="align-self-baseline" class=""><span
+                                class="input-title table-responsive-stack-thead">Unit Price 2</span><input type="text"
+                                class="input-group" style="max-width: 75px; width:100%;"></td>
+                        <td style="flex-basis: 9%" class="align-self-baseline" class=""><span
+                                class="input-title table-responsive-stack-thead">Unit Price 3</span><input type="text"
+                                class="input-group" style="max-width: 75px; width:100%;"></td>
+                    </tr>
                 </tbody>
             </table>
 
