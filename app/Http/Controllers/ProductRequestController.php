@@ -38,6 +38,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     *  Show finalize page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function finalize_show()
+    {
+        return view('product.request.finalize');
+    }
+
+    /**
      * Show supplier quotation page.
      *
      * @return \Illuminate\Http\Response
