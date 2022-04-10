@@ -58,6 +58,16 @@ class ProductRequestController extends Controller
     }
 
     /**
+     * Show delivery page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function delivery_show()
+    {
+        return view('product.request.delivery');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

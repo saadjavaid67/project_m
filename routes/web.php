@@ -25,3 +25,4 @@ Route::get('/product/request/supplier/quotation', [App\Http\Controllers\ProductR
 Route::get('/product/request/prepare/quotation', [App\Http\Controllers\ProductRequestController::class, 'prepare_quotation_show'])->name('product.request.prepare.quotation.show');
 Route::get('/product/request/purchase/order', [App\Http\Controllers\ProductRequestController::class, 'purchase_order_show'])->name('product.request.purchase.order.show');
 Route::get('/product/request/pick/up', [App\Http\Controllers\ProductRequestController::class, 'pick_up_show'])->name('product.request.pick.up.show');
+Route::get('/product/request/delivery', [App\Http\Controllers\ProductRequestController::class, 'delivery_show'])->name('product.request.delivery.show');
