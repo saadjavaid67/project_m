@@ -16,15 +16,15 @@ window.onload = function () {
     //Toggle sidenav using button
     menuToggle.addEventListener("click", function (e) {
         sidebarContainer.classList.toggle("active");
-        if(window.innerWidth >756)
-        mainContainer.style.marginLeft = "250px";
+        if (window.innerWidth > 756)
+            mainContainer.style.marginLeft = "250px";
     });
 
     //Open sidenav on hover
     sidebarContainer.addEventListener("mouseenter", function () {
         sidebarContainer.classList.add("active");
-        if(window.innerWidth >756)
-        mainContainer.style.marginLeft = "250px";
+        if (window.innerWidth > 756)
+            mainContainer.style.marginLeft = "250px";
     });
 
     //Close sidenav when not:hover
