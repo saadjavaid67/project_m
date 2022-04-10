@@ -52,7 +52,7 @@ class ProductRequestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function pick_up()
+    public function pick_up_show()
     {
         return view('product.request.pick_up');
     }
