@@ -11,11 +11,12 @@
         .box {
             border: 1px solid #BDBDBD;
             min-height: 143px;
-            height: 100%;
+            height: 80%;
             max-width: 128px;
             width: 100%;
             box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            border-radius: 15px;
+            border-radius: 15px !important;
+            margin: auto !important;
         }
 
         a {
@@ -93,44 +94,6 @@
                     </div>
                 </div>
 
-                {{-- <div class="row justify-content-between mt-5 check-icons">
-                    <div class="col-md text-center ">
-                            <i class="fa-solid fa-circle-check m-1"></i>
-                            <div class="request-progress"><span>{{ __('New Request') }}</span></div class="">
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"><span>{{ __('3 Quotations') }}</span></div class="">
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"><span>{{ __('Purchase Order') }}</span></div class="">
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"><span>{{ __('Pick Up') }}</span></div class="">
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
-                        <div class="request-progress bg-gray text-gray"><span>{{ __('Deliverd') }}</span></div>
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
-                        <div class="request-progress bg-gray text-gray"><span>{{ __('Invoice') }}</span></div>
-                    </div>
-
-                    <div class="col-md text-center">
-                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
-                        <div class="request-progress bg-gray text-gray"><span>{{ __('Paid') }}</span></div>
-                    </div>
-                </div> --}}
-
-
 
                 <div class="row mt-5">
                     <div class="col-lg">
@@ -183,43 +146,49 @@
                         <a class="" href="#">{{ __('Request') }}</a>
                     </div>
                     <div class="col-lg text-center">
-                        <div class="box border rounded"></div>
+                        <div class="box border rounded  m-auto"></div>
                         <a class="" href="#">{{ __('Quotation 1') }}</a>
                     </div>
 
                     <div class="col-lg text-center">
-                        <div class="box border rounded"></div>
+                        <div class="box border rounded m-auto"></div>
                         <a class="" href="#">{{ __('Quotation 2') }}</a>
                     </div>
 
                     <div class="col-lg text-center">
-                        <div class="box border rounded"></div>
+                        <div class="box border rounded m-auto"></div>
                         <a class="" href="#">{{ __('Quotation 3') }}</a>
                     </div>
                     <div class="col-lg text-center">
-                        <div class="box border rounded"></div>
+                        <div class="box border rounded m-auto"></div>
                         <a class="" href="#">{{ __('Delivery No.') }}</a>
                     </div>
                     <div class="col-lg text-center">
-                        <div class="box border rounded"></div>
+                        <div class="box border rounded m-auto"></div>
                         <a class="" href="#">{{ __('Invoice') }}</a>
                     </div>
                 </div>
 
-                <div class="row mt-5 justify-content-md-start justify-content-around">
-                    <div class="col-lg-2 request-detail text-center">
+                <div class="row text-center mt-5 justify-content-md-start justify-content-around">
+                    <div class="col-lg-2">
                         <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress">{{ __('Quotation') }}</div class="">
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('New Request') }}</div class="">
                     </div>
 
-                    <div class="col-lg-2 request-detail text-center">
+                    <div class="col-lg-2">
                         <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress">{{ __('Invoice') }}</div class="">
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('3 Quotations') }}</div class="">
                     </div>
 
-                    <div class="col-lg-2 request-detail text-center">
-                        <i class="fa-solid fa-circle-check m-1 font-gray"></i>
-                        <div class="request-progress bg-gray text-gray">{{ __('Paid') }}</div class="">
+                    <div class="col-lg-2">
+                        <i class="fa-solid fa-circle-check m-1"></i>
+                        <div class="request-progress"
+                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                            {{ __('Purchase Order') }}</div class="">
                     </div>
                 </div>
 
