@@ -12261,6 +12261,7 @@ fieldset:disabled .btn {
 }
 
 /* form group */
+textarea:focus,
 .form-group input:focus,
 .form-group select:focus {
   border: 1px solid #EFF0F6;
@@ -12271,6 +12272,7 @@ fieldset:disabled .btn {
   outline: unset;
 }
 
+textarea,
 .form-group input,
 .form-group select {
   border: 1px solid #EFF0F6;
