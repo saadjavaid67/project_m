@@ -40,7 +40,7 @@
         </div>
 
         {{-- form --}}
-        <form class="form-group" action="" class="row">
+        <form class="form-group row" action="">
             <table class="table table-responsive-stack table-borderless">
                 <thead>
                     <th style="flex-basis: 22%"><span class="input-title">Item Name</span></th>

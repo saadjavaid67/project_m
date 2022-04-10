@@ -12271,6 +12271,14 @@ fieldset:disabled .btn {
   outline: unset;
 }
 
+input[type=checkbox] {
+  border: 1px solid #D0D1D8 !important;
+  /* appearance: none; */
+  height: 42px !important;
+  width: 42px !important;
+  border-radius: 5px !important;
+}
+
 .form-group input,
 .form-group select {
   border: 1px solid #EFF0F6;

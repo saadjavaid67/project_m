@@ -37,7 +37,7 @@
         </div>
 
         {{-- form --}}
-        <form class="form-group" action="" class="row">
+        <form class="form-group row" action="">
             <div class="row m-auto pb-3">
                 <table class="table table-responsive-stack table-borderless">
                     <thead>
