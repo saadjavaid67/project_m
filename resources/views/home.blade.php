@@ -13,9 +13,11 @@
                             <span>Create a New Request</span>
                         </div>
                         <!-- <div> -->
-                        <button class="btn btn-light py-3 px-3" style="border-radius: 10px; height:3rem; width:auto">
-                            <i class="fa fa-plus fs-4 text-dark"></i>
-                        </button>
+                        <a href="{{ route('product.request.new.show') }}">
+                            <button class="btn btn-light py-3 px-3" style="border-radius: 10px; height:3rem; width:auto;">
+                                <i class="fa fa-plus fs-4 text-dark"></i>
+                            </button>
+                        </a>
                         <!-- </div> -->
                     </div>
                 </div>

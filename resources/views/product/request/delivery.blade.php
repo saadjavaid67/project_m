@@ -104,7 +104,7 @@
 
                 <div class="row">
                     <div class="col-md">
-                        <textarea placeholder="Comment" id="floatingTextarea2" class="w-100 p-4" style="height: 100px"></textarea>
+                        <textarea placeholder="Comment" id="floatingTextarea2" class="w-100 p-4" style="height: 100px" autofocus></textarea>
 
                     </div>
                 </div>
@@ -113,10 +113,10 @@
             {{-- buttons --}}
             <div class="col mt-5">
                 <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
-                    <button type="button" class="btn btn-danger m-2">
+                    <button type="reset" class="btn btn-danger m-2">
                         Cancel
                     </button>
-                    <button type="button" class="btn btn-primary m-2">
+                    <button type="submit" class="btn btn-primary m-2">
                         Confirm
                     </button>
                 </div>
