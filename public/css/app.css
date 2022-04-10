@@ -12521,4 +12521,10 @@ max-width: 439px;
     padding: 0 15px;
    }
 }
+.dba 
+{
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+   background: #FFFFFF;
+    border-radius:15px;
+}
 /* END:Responsive stacked table */
