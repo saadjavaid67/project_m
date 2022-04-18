@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+// BEGIN:Client routes
+Route::resource('client', ClientController::class);
+// END:Client routes
 
 // BEGIN:Product Request routes
 Route::prefix('product/request')->controller(App\Http\Controllers\ProductRequestController::class)->group(function () {
