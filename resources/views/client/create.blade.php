@@ -31,52 +31,64 @@
         {{-- form --}}
         <form class="form-group" action="" class="row">
             <div class="row">
-                <div class="col"><span class="input-title">Client</span><input type="text" class="input-group"
-                        required autofocus></div>
-            </div>
-
-            <div class="row mt-1 mt-md-3">
-                <div class="col-md-3"><span class="input-title">Request No.</span><input type="text"
-                        class="input-group"></div>
-                <div class="col-md-3"><span class="input-title">Vehicle/Garage</span><input type="text"
-                        class="input-group"></div>
+                <div class="col"><span class="input-title">Company Name</span><input type="text"
+                        class="input-group" required autofocus></div>
             </div>
             <div class="row mt-1 mt-md-3">
-                <div class="col-md-4"><span class="input-title">Vehicle name</span><input type="text"
+                <div class="col-md-4"><span class="input-title">Number</span><input type="text"
                         class="input-group"></div>
-                <div class="col-md-4"><span class="input-title">Vehicle type</span><input type="text"
+                <div class="col-md-4"><span class="input-title">Alternative No.</span><input type="text"
                         class="input-group"></div>
-                <div class="col-md-4"><span class="input-title">Model</span><input type="text"
+                <div class="col-md-4"><span class="input-title">E-mail</span><input type="text"
                         class="input-group"></div>
             </div>
 
             <div class="row mt-1 mt-md-3">
-                <div class="col-md-4"><span class="input-title">Plate No.</span><input type="text"
+                <div class="col-md-3"><span class="input-title">Country</span><input type="text"
                         class="input-group"></div>
-                <div class="col-md-4"><span class="input-title">Chase No.</span><input type="text"
+                <div class="col-md-3"><span class="input-title">Province</span><input type="text"
+                        class="input-group"></div>
+                <div class="col-md-3"><span class="input-title">City</span><input type="text"
+                        class="input-group"></div>
+                <div class="col-md-3"><span class="input-title">Zip Code</span><input type="text"
                         class="input-group"></div>
             </div>
 
             <div id="items_container">
                 <div class="row mt-1 mt-md-3">
-                    <div class="col"><span class="input-title">Item Name</span><input type="text"
+                    <div class="col"><span class="input-title">Address</span><input type="text"
                             class="input-group"></div>
-                    <div class="col-md-2"><span class="input-title">Unit</span><input type="text"
+                    <div class="col-md-4"><span class="input-title">Vat No</span><input type="text"
                             class="input-group"></div>
-                    <div class="col-md-2"><span class="input-title">Quantity</span><input type="text"
-                            class="input-group"></div>
-                    <div class="col-md-2">
-                        <span><a href="javascript:void(0)" id="add_item_btn" style="color: #4A3AFF">+Add Item</a></span>
-                    </div>
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col">
-                    <span><a href="javascript:void(0)" onclick="fire_upload_swal()" style="color: #170F49;">Attach Request Pdf</a></span>
+            <p class="input-title mt-4">Google Map Location</p>
+            <div class="row mt-2 row-height">
+                <div class="col-md-3">
+                    <div class="py-5  px-2 h-100 me-md-5 m-0 dba">
+
+                    </div>
                 </div>
 
-                {{-- buttons --}}
+                <div class="col-md"></div>
+
+                <div class="col-md-3 text-center">
+                    <div class="py-5 mx-auto mt-xs-2 m-0 dba box-style mb-3">
+
+                    </div>
+                    <a href="#" style="color: #170F49;" class="fw-bold">Attach VAT Certificate Pdf</a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="py-5 mx-auto mt-xs-2 m-0 dba box-style mb-3">
+
+                    </div>
+                    <a href="#" style="color: #170F49;" class="fw-bold">Attatch C.R Pdf</a>
+                </div>
+            </div>
+
+            {{-- buttons --}}
+            <div class="row mt-4">
                 <div class="col">
                     <div class="d-flex flex-column flex-md-row justify-content-end align-items-end text-light">
                         <button type="reset" class="btn btn-danger m-2">
