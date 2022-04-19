@@ -25,7 +25,7 @@
     <div class="container mt-4">
 
         <div class="row text-center border-bottom pb-2 mb-5">
-            <h2 class="page-title">{{ __('Add Client') }}</h2>
+            <h2 class="page-title">{{ __('Add User') }}</h2>
         </div>
 
         {{-- form --}}

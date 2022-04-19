@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +28,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // BEGIN:Client routes
 Route::resource('client', ClientController::class);
+Route::resource('supplier', SupplierController::class);
+Route::resource('user', UserController::class);
 // END:Client routes
 
 // BEGIN:Product Request routes
