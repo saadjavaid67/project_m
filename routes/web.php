@@ -34,6 +34,7 @@ Route::resource('user', UserController::class);
 
 // BEGIN:Product Request routes
 Route::prefix('product/request')->controller(App\Http\Controllers\ProductRequestController::class)->group(function () {
+    Route::get('/', 'index')->name('product.request.index');
     Route::get('new', 'new_request_show')->name('product.request.new.show');
     Route::get('supplier/quotation', 'supplier_quotation_show')->name('product.request.supplier.quotation.show');
     Route::get('prepare/quotation', 'prepare_quotation_show')->name('product.request.prepare.quotation.show');
