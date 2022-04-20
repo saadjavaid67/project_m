@@ -2,10 +2,31 @@
 
 @push('css')
     <style>
-             .fa-solid {
-            font-size: 1.9rem;
+        .check {
             color: #6FCF97;
+        }
+
+        .un-check {
+            color: #bdbdbd;
+        }
+
+        .bg-uncheck {
+            background-color: #F2F2F2;
+        }
+
+        .bg-check {
+            background-color: #ECF5FE;
+        }
+
+
+        .fa-solid {
+            font-size: 1.9rem;
             margin: 10px !important;
+        }
+
+        .request-progress {
+            font-size: 15px;
+            border-radius: 40px;
         }
 
         .box {
@@ -44,52 +65,45 @@
 
                 <div class="row justify-content-between text-center icons">
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress check bg-check">
                             {{ __('New Request') }}</div class="">
                     </div>
 
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress check bg-check">
                             {{ __('3 Quotations') }}</div class="">
                     </div>
 
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress check bg-check">
                             {{ __('Purchase Order') }}</div class="">
                     </div>
 
-                    
+
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress check bg-check">
                             {{ __('Pick Up') }}</div class="">
                     </div>
 
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress check bg-check">
                             {{ __('Delivered') }}</div class="">
                     </div>
 
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 un-check"></i>
+                        <div class="request-progress un-check bg-uncheck">
                             {{ __('Invoice') }}</div class="">
                     </div>
 
                     <div class="col-lg">
-                        <i class="fa-solid fa-circle-check m-1" style="color: #BDBDBD;"></i>
-                        <div class="request-progress"
-                            style="background: #BDBDBD; border-radius:40px;color:#828282; font-size:15px;">
+                        <i class="fa-solid fa-circle-check m-1 un-check"></i>
+                        <div class="request-progress un-check bg-uncheck">
                             {{ __('Paid') }}</div class="">
                     </div>
                 </div>
@@ -99,7 +113,7 @@
                     <div class="col-lg">
                         <div class="row pb-lg pb-3 justify-content-between">
                             <div class="pb-lg-2"><span class="input-title">{{ __('Client') }}</span></div>
-                            <div class="input-sub-title">{{ __('Radayat Company') }}</div>
+                            <div class="input-sub-title">{{ __('Toyota') }}</div>
                         </div>
                     </div>
                     <div class="col-lg">
@@ -161,7 +175,7 @@
                     </div>
                     <div class="col-lg text-center">
                         <div class="box border rounded m-auto"></div>
-                        <a class="" href="#">{{ __('Delivery No.') }}</a>
+                        <a class="" href="#">{{ __('Delivery Note') }}</a>
                     </div>
                     <div class="col-lg text-center">
                         <div class="box border rounded m-auto"></div>
@@ -171,24 +185,21 @@
 
                 <div class="row text-center mt-5 justify-content-md-start justify-content-around">
                     <div class="col-lg-2">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
-                            {{ __('New Request') }}</div class="">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress bg-check check">
+                            {{ __('Quotation') }}</div class="">
                     </div>
 
                     <div class="col-lg-2">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
-                            {{ __('3 Quotations') }}</div class="">
+                        <i class="fa-solid fa-circle-check m-1 check"></i>
+                        <div class="request-progress bg-check check">
+                            {{ __('Invoice') }}</div class="">
                     </div>
 
                     <div class="col-lg-2">
-                        <i class="fa-solid fa-circle-check m-1"></i>
-                        <div class="request-progress"
-                            style="background-color:#ECF5FE; border-radius:40px;color:#1CC363; font-size:15px;">
-                            {{ __('Purchase Order') }}</div class="">
+                        <i class="fa-solid fa-circle-check m-1 un-check"></i>
+                        <div class="request-progress bg-uncheck un-check">
+                            {{ __('Paid') }}</div class="">
                     </div>
                 </div>
 
@@ -197,7 +208,7 @@
                         <div class="row justify-content-between">
                             <div class="pb-2"><span class="input-title">{{ __('Store Name') }}</span>
                             </div>
-                            <div class="input-sub-title">{{ __('Radayat Company') }}</div>
+                            <div class="input-sub-title">{{ __('Toyota') }}</div>
                         </div>
                     </div>
                     <div class="col-lg">
@@ -236,7 +247,7 @@
                                 {{ __('Cancel') }}
                             </button>
                             <button type="submit" class="btn btn-primary m-2">
-                                {{ __('Confirm') }}
+                                {{ __('Done') }}
                             </button>
                         </div>
                     </div>
