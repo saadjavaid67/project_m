@@ -35,55 +35,29 @@
                         class="input-group" required autofocus></div>
             </div>
             <div class="row mt-1 mt-md-3">
-                <div class="col-md-4"><span class="input-title">Number</span><input type="text"
+                <div class="col-md-4"><span class="input-title">Role</span><input type="text"
                         class="input-group"></div>
-                <div class="col-md-4"><span class="input-title">Alternative No.</span><input type="text"
+            </div>
+            <div class="row mt-1 mt-md-3">
+                <div class="col-md-4"><span class="input-title">Name</span><input type="text"
+                        class="input-group"></div>
+                <div class="col-md-4"><span class="input-title">Number</span><input type="text"
                         class="input-group"></div>
                 <div class="col-md-4"><span class="input-title">E-mail</span><input type="text"
                         class="input-group"></div>
             </div>
 
             <div class="row mt-1 mt-md-3">
-                <div class="col-md-3"><span class="input-title">Country</span><input type="text"
-                        class="input-group"></div>
-                <div class="col-md-3"><span class="input-title">Province</span><input type="text"
-                        class="input-group"></div>
-                <div class="col-md-3"><span class="input-title">City</span><input type="text"
-                        class="input-group"></div>
-                <div class="col-md-3"><span class="input-title">Zip Code</span><input type="text"
+                <div class="col-md-4"><span class="input-title">Username</span><input type="text"
                         class="input-group"></div>
             </div>
 
             <div id="items_container">
                 <div class="row mt-1 mt-md-3">
-                    <div class="col"><span class="input-title">Address</span><input type="text"
+                    <div class="col-md-4"><span class="input-title">Password</span><input type="text"
                             class="input-group"></div>
-                    <div class="col-md-4"><span class="input-title">Vat No</span><input type="text"
+                    <div class="col-md-4"><span class="input-title">Repeat Password</span><input type="text"
                             class="input-group"></div>
-                </div>
-            </div>
-
-            <p class="input-title mt-4">Google Map Location</p>
-            <div class="row mt-2 row-height">
-                <div class="col-md-3">
-                    <div class="py-5  px-2 h-100 me-md-5 m-0 dba">
-
-                    </div>
-                </div>
-
-                <div class="col-md"></div>
-
-                <div class="col-md-3 text-center">
-                    <div class="py-5 mx-auto mt-xs-2 m-0 dba box-style mb-3">
-
-                    </div>
-                    <a href="#" style="color: #170F49;" class="fw-bold">Attach VAT Certificate Pdf</a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="py-5 mx-auto mt-xs-2 m-0 dba box-style mb-3">
-
-                    </div>
-                    <a href="#" style="color: #170F49;" class="fw-bold">Attatch C.R Pdf</a>
                 </div>
             </div>
 
