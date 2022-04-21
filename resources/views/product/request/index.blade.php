@@ -1,8 +1,236 @@
 @extends('layouts.app')
 
+@push('css')
+    <style>
+        .done {
+            color: #17E383 !important;
+        }
+
+        .pending {
+            color: #FF9548 !important;
+        }
+
+        .fa-square-full {
+            font-size: 6px;
+            color: #ededed;
+        }
+
+        th {
+            font-size: 16px;
+            color: #6B6F7B;
+            font-weight: 500
+        }
+
+    </style>
+@endpush
 
 @section('content')
-    <div class="container mt-4">
+    <div class="container mt-4 requests">
+        <h1>Requests</h1>
+        <div class="row justify-content-between  gap-3">
+            {{-- searcbar --}}
+            <div class="col-lg-2">
+                <div class="d-flex mb-2 mb-md align-items-center border rounded w-100">
+                    <a class="text-dark" href="#">
+                        <i class="fa-solid fa-search px-2"></i>
+                    </a>
+                    <input type="text" name="" id="" class="border-0 w-100" placeholder="Search for...">
+                </div>
+            </div>
+
+            {{-- plug & play --}}
+            <div class="col-lg">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="px-2">Plug & Play</span>
+                        <img class="filter-icon border-start pe-1" src="..\assets\icons\plug.png" alt="">
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            {{-- employee --}}
+            <div class="col-lg">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="px-2">Employee</span>
+                        <img class="filter-icon border-start pe-1" src="..\assets\icons\employee.png" alt="">
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            {{-- status --}}
+            <div class="col-lg">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="px-2">Status</span>
+                        <img class="filter-icon border-start pe-1" src="..\assets\icons\status.png" alt="">
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            {{-- type --}}
+            <div class="col-lg">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="px-2">Type</span>
+                        <img class="filter-icon border-start pe-1" src="..\assets\icons\type-filter.png" alt="">
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            {{-- type --}}
+            <div class="col-lg ms-5">
+                <div class="row">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="col-lg-10">
+                            <div class="dropdown">
+                                <button
+                                    class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="px-2">Sort by</span>
+                                    <img class="filter-icon border-start pe-1" src="..\assets\icons\type-filter.png" alt="">
+
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <a href="#" class="">
+                                <i class="fa-solid fa-circle-arrow-down fa-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- table --}}
+        <table class="table table-responsive mt-5">
+            <thead>
+                <th><input type="checkbox" name="" id=""></th>
+                <th>Request No.</th>
+                <th class="text-center">Date</th>
+                <th>Client</th>
+                <th class="text-center">Vehicel Name</th>
+                <th class="text-center">No. Plate</th>
+                <th class="text-center">PO No.</th>
+                <th class="text-center">Invoice No.</th>
+                <th class="text-center">Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td class="fw-bold">8943</td>
+                    <td class="text-center fw-bold">Jan 2,2022</td>
+                    <td>
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold">Itai Bracha</span>
+                            <span>Itai Bracha31@gmail.com</span>
+                        </div>
+                    </td>
+                    <td class="fw-bold text-center">Haundai</td>
+                    <td class="fw-bold text-center">SHA 121</td>
+                    <td class="fw-bold text-center">78399928112</td>
+                    <td class="fw-bold text-center">MA/1001</td>
+                    <td class="text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column text-center ps-5">
+                                <div class="fw-bold done">Done</div>
+                                <div class="d-flex justify-content-between gap-1">
+                                    <i class="fa-solid fa-square-full done"></i>
+                                    <i class="fa-solid fa-square-full done"></i>
+                                    <i class="fa-solid fa-square-full done"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                </div>
+                            </div>
+                            <div class="div mt-2">
+                                <a href="#" class="text-dark">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td class="fw-bold">7839</td>
+                    <td class="text-center fw-bold">Jan 2,2022</td>
+                    <td>
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold">Itai Bracha</span>
+                            <span>Itai Bracha31@gmail.com</span>
+                        </div>
+                    </td>
+                    <td class="fw-bold text-center">Hilux</td>
+                    <td class="fw-bold text-center">UJH 7389</td>
+                    <td class="fw-bold text-center">9087655567</td>
+                    <td class="fw-bold text-center">MA/1004</td>
+                    <td class="text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column text-center ps-5">
+                                <div class="fw-bold pending">Pending</div>
+                                <div class="d-flex justify-content-between gap-1">
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                    <i class="fa-solid fa-square-full"></i>
+                                </div>
+                            </div>
+                            <div class="div mt-2">
+                                <a href="#" class="text-dark">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
     </div>

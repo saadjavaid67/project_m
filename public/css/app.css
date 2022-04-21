@@ -2948,6 +2948,9 @@ textarea.form-control-lg {
   position: relative;
   z-index: 2;
 }
+.btn:focus{
+  box-shadow: unset !important;
+}
 
 .input-group .btn:focus {
   z-index: 3;
@@ -12577,3 +12580,49 @@ max-width: 439px;
   height: 220px;
 }
 /* add supplier page end */
+
+
+/* Request page: START */
+.requests input:focus-visible{
+    outline: unset;
+}
+
+.requests .dropdown-toggle::after{
+  content: unset;
+}
+
+/* .requests .dropdown{
+  max-width: 157px;
+  width: 100%;
+} */
+
+.requests .rounded{
+  border-radius: 8px !important;
+}
+.requests .btn{
+  border-radius: 8px !important;
+  height: 42px;
+  color: #313A4E;
+  font-weight: 500;
+  max-width: unset !important;
+  width: 100%;
+}
+
+.requests .dropdown span{
+  font-size: 14px;
+}
+
+.filter-icon{
+  padding: 12px 8px;
+}
+
+.requests .fa-circle-arrow-down{
+ color: #BABEC8 !important;
+}
+
+.requests table input[type=checkbox]{
+  width: 20px !important;
+  height: auto !important;
+}
+
+/* Request page: END */
