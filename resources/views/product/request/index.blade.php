@@ -21,13 +21,18 @@
             font-weight: 500
         }
 
+        .dropdown-elipsis {
+            border: unset !important;
+            padding: unset !important;
+        }
+
     </style>
 @endpush
 
 @section('content')
     <div class="container mt-4 requests">
         <h1>Requests</h1>
-        <div class="row justify-content-between  gap-3">
+        <div class="row justify-content-between  gap-2">
             {{-- searcbar --}}
             <div class="col-lg-2">
                 <div class="d-flex mb-2 mb-md align-items-center border rounded w-100">
@@ -109,32 +114,31 @@
 
 
             {{-- type --}}
-            <div class="col-lg ms-lg-5">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-11">
-                            <div class="dropdown">
-                                <button
-                                    class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
-                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="px-2">Sort by</span>
-                                    <img class="filter-icon border-start pe-1" src="..\assets\icons\btn-down.png" alt="">
+            <div class="col-lg ms-xlg-5">
+                <div class="d-flex align-items-center">
+                    <div class="col-11">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="px-2">Sort by</span>
+                                <img class="filter-icon border-start pe-1" src="..\assets\icons\btn-down.png" alt="">
 
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Price</a></li>
-                                    <li><a class="dropdown-item" href="#">Model</a></li>
-                                    <li><a class="dropdown-item" href="#">Color</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-1 ms-lg ms-md-3">
-                            <a href="#" class="">
-                                <i class="fa-solid fa-circle-arrow-down fa-2xl"></i>
-                            </a>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Price</a></li>
+                                <li><a class="dropdown-item" href="#">Model</a></li>
+                                <li><a class="dropdown-item" href="#">Color</a></li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="col ms-lg-1 ms-sm-4">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-circle-arrow-down fa-2xl"></i>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -180,10 +184,19 @@
                                     <i class="fa-solid fa-square-full"></i>
                                 </div>
                             </div>
-                            <div class="div mt-2">
-                                <a href="#" class="text-dark">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
+                            <div class="mt-2">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">option</a></li>
+                                        <li><a class="dropdown-item" href="#">option</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </td>
@@ -217,10 +230,19 @@
                                     <i class="fa-solid fa-square-full"></i>
                                 </div>
                             </div>
-                            <div class="div mt-2">
-                                <a href="#" class="text-dark">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
+                            <div class="mt-2">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white dropdown-toggle d-flex justify-content-between align-items-center"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">option</a></li>
+                                        <li><a class="dropdown-item" href="#">option</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </td>

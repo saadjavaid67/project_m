@@ -12618,11 +12618,13 @@ max-width: 439px;
 
 .requests .fa-circle-arrow-down{
  color: #BABEC8 !important;
+ font-size: 22px !important;
 }
 
 .requests table input[type=checkbox]{
   width: 20px !important;
   height: auto !important;
+  box-shadow: unset !important;
 }
 
 /* Request page: END */
