@@ -143,7 +143,8 @@
         </div>
 
         {{-- table --}}
-        <table class="table table-responsive mt-5">
+       <div class="container table-responsive">
+        <table class="table mt-5">
             <thead>
                 <th><input type="checkbox" name="" id=""></th>
                 <th>Request No.</th>
@@ -249,6 +250,7 @@
                 </tr>
             </tbody>
         </table>
+       </div>
     </div>
 
 
