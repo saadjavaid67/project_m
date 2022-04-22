@@ -51,7 +51,6 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,9 +66,9 @@
 
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Employee 1</a></li>
+                        <li><a class="dropdown-item" href="#">Employee 2</a></li>
+                        <li><a class="dropdown-item" href="#">Employee 3</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,9 +84,8 @@
 
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Brand New</a></li>
+                        <li><a class="dropdown-item" href="#">Used</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,35 +101,34 @@
 
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Regular</a></li>
+                        <li><a class="dropdown-item" href="#">Truck</a></li>
                     </ul>
                 </div>
             </div>
 
 
             {{-- type --}}
-            <div class="col-lg ms-5">
+            <div class="col-lg ms-lg-5">
                 <div class="row">
-                    <div class="d-flex align-items-center gap-2">
-                        <div class="col-lg-10">
+                    <div class="d-flex align-items-center">
+                        <div class="col-11">
                             <div class="dropdown">
                                 <button
                                     class="btn btn-white border dropdown-toggle d-flex justify-content-between align-items-center px-2"
                                     type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="px-2">Sort by</span>
-                                    <img class="filter-icon border-start pe-1" src="..\assets\icons\type-filter.png" alt="">
+                                    <img class="filter-icon border-start pe-1" src="..\assets\icons\btn-down.png" alt="">
 
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Price</a></li>
+                                    <li><a class="dropdown-item" href="#">Model</a></li>
+                                    <li><a class="dropdown-item" href="#">Color</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-1 ms-lg ms-md-3">
                             <a href="#" class="">
                                 <i class="fa-solid fa-circle-arrow-down fa-2xl"></i>
                             </a>
