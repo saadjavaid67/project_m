@@ -11,8 +11,24 @@
         <div class="row text-center border-bottom pb-2 mb-5">
             <h2 class="page-title">{{ __('Request 2536') }}</h2>
         </div>
+
+        <div class="row pb-5 align-items-center mx-auto">
+            <div class="col-lg">
+                <div class="pb-2"><span class="input-title">Client</span></div>
+                <div class="input-sub-title">Radayat Company</div>
+            </div>
+            <div class="col-lg form-group">
+                <div class="pb-2"><span class="input-title">Purchase Order No.</span></div>
+                <input type="text" class="input-group w-75">
+            </div>
+        </div>
+
         <form action="" class="form-group">
-            <div class="row m-auto pb-3">
+            <div class="row mx-auto">
+                <div class="col-md pb-3 pb-md">
+                    <div class="input-title pb-2"><span class="input-title">Vehicle name</span></div>
+                    <div class="input-sub-title">Toyota</div>
+                </div>
                 <div class="col-md pb-3 pb-md">
                     <div class="input-title pb-2"><span class="input-title">Vehicle type</span></div>
                     <div class="input-sub-title">Pick Up</div>
@@ -29,66 +45,6 @@
                     <div class="input-title pb-2"><span class="input-title">Chase No.</span></div>
                     <div class="input-sub-title">367784999499942</div>
                 </div>
-
-                <table class="table table-responsive-stack table-borderless">
-                    <thead>
-                        <th style="flex-basis: 26%"><span class="input-title">Item Name</span></th>
-                        <th style="flex-basis: 26%"><span class="input-title">Item No.</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Unit</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Quantity</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Unit Price</span></th>
-                        <th style="flex-basis: 12%"><span class="input-title">Total</span></th>
-                    </thead>
-                    <tbody>
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
-                                    class="input-group" style="max-width: 232px; width:100%;" autofocus></td>
-                            <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Unit Price</span><input type="text"
-                                    class="input-group" style="max-width: 75px; width:100%;">
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Total</span><input type="text"
-                                    class="input-group" style="max-width: 75px; width:100%;"></td>
-                        </tr>
-
-                        <tr class="pt-3">
-                            <td style="flex-basis: 26%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Item Name</span><span
-                                    class="input-sub-title">Air Filter and Conditioner</span></td>
-                            <td style="flex-basis: 26%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Item No.</span><input type="text"
-                                    class="input-group" style="max-width: 232px; width:100%;"></td>
-                            <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Unit</span><span
-                                    class="input-sub-title">Set</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline"><span
-                                    class="input-title table-responsive-stack-thead">Quantity</span><span
-                                    class="input-sub-title">15</span>
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Unit Price</span><input type="text"
-                                    class="input-group" style="max-width: 75px; width:100%;">
-                            </td>
-                            <td style="flex-basis: 12%" class="align-self-baseline" class=""><span
-                                    class="input-title table-responsive-stack-thead">Total</span><input type="text"
-                                    class="input-group" style="max-width: 75px; width:100%;"></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
 
             <div class="row justify-content-between">
@@ -186,7 +142,7 @@
 
             <div class="row mt-5">
                 <div class="col">
-                   
+
                 </div>
 
                 {{-- buttons --}}
